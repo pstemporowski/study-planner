@@ -1,0 +1,66 @@
+﻿<Window x:Class="StudiumHelper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudiumHelper"
+        mc:Ignorable="d"
+        Title="Planer" Height="700" Width="1300" Initialized="OnLoad" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="/Windows/PlannerIco.ico">
+    <Window.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Margin" Value="6 0 4 0"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="DarkBlue"/>
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="menuStyle" TargetType="{x:Type StackPanel}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Background" Value="#FF1D3770" />
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background" Value="Transparent" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="821*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="frame" Content="" Margin="0,0,0,-16" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Grid.Column="2"/>
+        <StackPanel HorizontalAlignment="Center" Width="150" Background="#FF3C64BB">
+            <Label Foreground="White" FontFamily="Dosis" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Background="#00000000" FontWeight="Bold">Studienplaner</Label>
+
+            <StackPanel x:Name="mainPageStp" Style="{StaticResource menuStyle}" Cursor="Hand" Orientation="Horizontal"  Height="50" MouseUp="OpenMainPage"  Margin="-2,50,0,0" MouseEnter="MouseEnter" MouseLeave="MouseLeaveStackPanel">
+                <Image x:Name="homeIcon" Height="25" Source="/Icons/house-48.ico" VerticalAlignment="Center"/>
+                <Label Width="145" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" FontSize="14" FontWeight="Bold" FontFamily="Leelawadee" Foreground="White">
+                    Startseite
+                </Label>
+
+            </StackPanel>
+            <StackPanel x:Name="stckpnl_add" Style="{StaticResource menuStyle}" Orientation="Horizontal"  Height="50" VerticalAlignment="Center" MouseUp="OpenAddEvent" MouseEnter="MouseEnter" MouseLeave="MouseLeaveStackPanel">
+                <Image x:Name="AddIcon" Source="/Icons/add-24.ico" Height="25" VerticalAlignment="Center"></Image>
+                <Label  Width="145" VerticalAlignment="Center"  Height="30" FontSize="14" FontWeight="Bold" FontFamily="Leelawadee"  Content="Hinzufügen" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Style="{StaticResource menuStyle}" MouseUp="OpenSchedule" Orientation="Horizontal" Height="50" MouseEnter="MouseEnter" MouseLeave="MouseLeaveStackPanel">
+                <Image x:Name="ScheduleIcon" Source="/Icons/calendar-11-48.ico" Height="25" VerticalAlignment="Center"></Image>
+                <Label Content="Stundeplan" Width="145" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" FontSize="14" FontWeight="Bold" FontFamily="Leelawadee"  Foreground="White"/>
+            </StackPanel>
+            <StackPanel Style="{StaticResource menuStyle}"  Orientation="Horizontal" Height="50" MouseUp="OpenToDo" MouseEnter="MouseEnter" MouseLeave="MouseLeaveStackPanel">
+                <Image x:Name="ToDoIcon" Source="/Icons/list-2-48.ico" Height="25" VerticalAlignment="Center"></Image>
+                <Label Content="To-Do" Width="145"  Height="30" FontSize="14" FontWeight="Bold" FontFamily="Leelawadee" Foreground="White"  />
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

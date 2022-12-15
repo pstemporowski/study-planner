@@ -1,0 +1,28 @@
+﻿<Page x:Class="StudiumHelper.ToDoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StudiumHelper"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1142"
+      Title="ToDoPage">
+    <Page.Resources>
+        
+        
+        
+        
+        <Style TargetType="Border">
+            <Setter Property="BorderThickness" Value="0.3"></Setter>
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="Background" Value="#f7f7f7"></Setter>
+            <Setter Property="CornerRadius" Value="10"></Setter>
+        </Style>
+
+    </Page.Resources>
+
+    <Grid x:Name="gridToDo" Background="White" Initialized="InitializedWindow" MouseUp="onClick" MouseDown="ContentOnMouseDown">
+        <TextBox x:Name="textBox" Visibility="Collapsed" HorizontalAlignment="Left" Height="23" Margin="64,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Page>
