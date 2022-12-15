@@ -1,1 +1,1 @@
-# StudiumHelper
+# StudienPlaner
