@@ -1,11 +1,30 @@
-# Studienplaner
+# **Note:** This will probably be the most shittest code you've ever seen, but it holds a special place in my heart as it was my very first private programming project.
 
-Beim Studienplaner handelt es sich, wie schon der Name sagt, um einen Planer der gut für die Uni geeignet ist. Man kann dort seine Uni-Fächer eintragen und dann den Stundenplan/ nächsten Veranstaltungen anzeigen lassen. Darüber hinaus kann man auch eigene TO-DO-Listen erstellen.
+---
 
-Auf der Startseite kann man das nächste Meeting mit allen Informationen über das Meeting sehen. Ebenfalls ist das darauffolgende Meeting ebenfalls zu sehen. Die untere TO-DO-Liste hängt von der "TO-DO"-Page ab, falls bei dem TO-DO ein neues Element mit demselben Namen existiert, so wird es hier aktualisiert.
+# Study Planner
 
-Bei der "Hinzufügen"-Page kann man neue Veranstaltung hinzufügen sowie die bereits existierenden Veranstaltungen bearbeiten oder löschen.
+The Study Planner is, as the name suggests, a planner that is well-suited for university. It allows you to enter your university courses and display your timetable or upcoming events. Additionally, you can create your own to-do lists.
 
-Bei der "Stundenplan"-Page kann man, basierend auf den hinzugefügten Veranstaltungen, den Stundenplan sehen.
+### Features
 
-Die "TO-DO"-Page ist dazu da, um sich eine Übersicht über die Aufgaben in den einzelnen Veranstaltungen zu verschaffen, aber ebenfalls um organisierter im Studium zu sein.
+1. **Homepage**
+   - Displays the next meeting with all the details about the event.
+   - Also shows the subsequent meeting.
+   - The bottom section contains a to-do list that is synchronized with the "TO-DO" page. If a new item with the same name is added there, it gets updated here.
+
+2. **Add Page ("Hinzufügen")**
+   - Allows you to add new events.
+   - Existing events can be edited or deleted.
+
+3. **Timetable Page ("Stundenplan")**
+   - Based on the added events, you can view your timetable here.
+
+4. **TO-DO Page**
+   - Provides an overview of tasks for each event.
+   - Helps to stay organized during your studies.
+
+---
+
+While it may not be perfect, this project holds sentimental value as it marks the beginning of my journey into programming.
+
