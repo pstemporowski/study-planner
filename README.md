@@ -1,4 +1,4 @@
-# **Note:** This will probably be the most shittest code you've ever seen, but it holds a special place in my heart as it was my very first private programming project.
+# **Note:** This will probably be the most shittest code you've ever seen, but it was my very first programming project.
 
 ---
 
